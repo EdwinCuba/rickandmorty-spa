@@ -1,14 +1,16 @@
 import Header from '../templates/header';
 import Home from '../pages/home';
 import Character from "../pages/character";
+import About from '../pages/about';
 import Error404 from '../pages/error404';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 
 const routes = {
   '/': Home,
+  '/rickandmorty-spa': Home,
   '/:id': Character,
-  '/contact': 'Contact',
+  '/about': About,
 }
 
 const router = async () => {

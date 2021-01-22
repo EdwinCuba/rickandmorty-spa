@@ -105,6 +105,29 @@ header .header__nav a {
   font-weight: 500;
 }
 
+.about {
+  width: 90%;
+  margin: 10px auto;
+}
+.about .about__item {
+  margin-bottom: 20px;
+  border: 2px solid #3393a5;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: -6px 7px 14px rgba(0, 0, 0, 0.5);
+}
+.about .about__item h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3393a5;
+  margin-bottom: 5px;
+}
+.about .about__item p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
 @media screen and (min-width: 650px) {
   .characters {
     grid-template-columns: repeat(2, 300px);
@@ -130,6 +153,12 @@ header .header__nav a {
   }
   .characters__card--information h3 span {
     font-size: 2.4rem;
+  }
+  .about .about__item h2 {
+    font-size: 2.6rem;
+  }
+  .about .about__item p {
+    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -162,5 +191,12 @@ header .header__nav a {
   }
   .characters__card--information h3 span {
     font-size: 3.2rem;
+  }
+
+  .about .about__item h2 {
+    font-size: 3.4rem;
+  }
+  .about .about__item p {
+    font-size: 3rem;
   }
 }
